@@ -1,0 +1,170 @@
+body {
+	
+	
+	
+			color: #fcfcfc;
+			font-family: "segoe-ui", "open-sans", tahoma, arial;
+			background-image: url('17.png');
+		}
+		table {
+			margin: auto;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+			font-size: 12px;
+		}
+
+		h1 {
+			margin: 25px auto 0;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 20px;
+			color: #ffffff;
+			
+		}
+		div {
+			margin: 25px auto 0;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 17px;
+		}
+
+		table td {
+			transition: all .5s;
+		}
+		
+		/* Table */
+		.tabla_datos {
+			border-collapse: collapse;
+			font-size: 14px;
+			min-width: 537px;
+		}
+
+		.tabla_datos th, 
+		.tabla_datos td {
+			border: 1px solid #ffffff;
+			padding: 7px 17px;
+		}
+		.tabla_datos caption {
+			margin: 7px;
+		}
+
+		/* Table Header */
+		#titulo {
+			background-color: #715db9;
+			color: #653baa;
+			border-color: #cfe9ff !important;
+			text-transform: uppercase;
+		}
+
+		/* Table Body */
+		.tabla_datos tbody td {
+			color: #fffafa;
+		}
+		.tabla_datos tbody td:first-child,
+		.tabla_datos tbody td:nth-child(4),
+		.tabla_datos tbody td:last-child {
+			text-align: right;
+		}
+
+		.tabla_datos tbody tr:nth-child(odd) td {
+			background-color: #403e9e;
+		}
+		.tabla_datos tbody tr:hover td {
+			background-color: #d16601;
+			border-color: #ffff0f;
+		}
+
+		/* Table Footer */
+		.tabla_datos tfoot th {
+			background-color: #e5f5ff;
+			text-align: right;
+		}
+		.tabla_datos tfoot th:first-child {
+			text-align: left;
+		}
+		.tabla_datos tbody td:empty
+		{
+			background-color: #ffcccc;
+		}
+
+
+
+
+
+		.form-post {
+    
+			width: 400px;
+			background: #473370;
+			padding: 30px;
+			margin: center;
+			margin-top: 100px;
+			border-radius: 4px;
+			font-family: 'calibri';
+			color: white;
+		
+		
+		}
+		
+		.h4{
+		font-size: 22px;
+		margin-bottom: 20px;
+		margin: center;
+		
+		}
+		.controls{
+			width: 100%;
+			background: hsl(250, 63%, 18%);
+			padding: 10px;
+			border-radius: 4px;
+			margin-bottom: 16px;
+			border: 2px solid #f7f7fa;
+			font-family: 'calibri';
+			font-size: 18px;
+			color: white;
+			margin: center;
+		
+		}
+
+
+		
+		
+		.form-register {
+			background: hsla(250, 63%, 18%, 0.849);
+		   width: 400px;
+		   padding: 45px;
+		   margin: auto;
+		   margin-top: 100px;
+		   border-radius: 4px;
+		   font-family: 'calibri';
+		   color: white;
+		}
+		
+		.form-register h4{
+			font-size: 22px;
+			margin-bottom: 20px;
+		 }
+		
+		.btn{
+			width: 100%;
+			background: #044deb;
+			border: 1px solid white;
+			padding: 12px;
+			color: white;
+			margin: 16px 0;
+			font-size: 16px;
+			margin: center;
+		
+		}
+		
+		.form-titulo{
+		  
+			font-family: 'calibri';
+			color: white;
+			font-size: 22px;
+		margin-bottom: 20px;
+		margin: center;
+		
+		
+		
+		
+			}
+		

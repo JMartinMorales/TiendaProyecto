@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <title></title> 
+   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+   <link rel="stylesheet" href="estilos.css">   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>  
+<body>
+ <form class="formulario" method="post" id="formularioregistro">
+   <h1>Registrate</h1>
+	 
+     <div class="contenedor">
+     
+     <div class="input-contenedor">
+         <i class="fas fa-user icon"></i>
+         <input type="text" name="nombre" placeholder="Nombre Completo">
+         
+       </div>
+         
+         <div class="input-contenedor">
+         <i class="fas fa-envelope icon"></i>
+         <input type="text" name="email" placeholder="Correo Electronico">
+         
+         </div>
+         
+         <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+         <input type="password" name="pass" placeholder="Contraseña">
+         
+         </div>
+         <div class="button" style="text-align: center;"onclick="Registrar()">Registrate</div>
+         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+         <p>¿Ya tienes una cuenta?<a class="link" href="loginvista.html">Iniciar Sesion</a></p>
+   </div>
+    </form>
+</body>
+<script type="text/javascript">
+  
+   function Registrar() {
+      var formulario = new FormData(document.getElementById('formularioregistro'));
+      $.ajax({
+         url: "http://localhost/proyecto%20final/php/registrarusuario.php",
+         data: formulario,
+         type: "POST",
+         contentType: false,
+         processData: false,
+         success: function(resultado){
+            alert(resultado);
+         },
+         error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest);
+            console.log(textStatus);
+            console.log(errorThrown);
+         }
+      });
+   }
+</script>
+
+</html>
